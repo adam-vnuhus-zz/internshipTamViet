@@ -21,7 +21,7 @@ app.controller("formCtrl", function($scope) {
     try {
       $scope.result = eval($scope.expressions);
     } catch (err) {
-      $scope.expressions = "error";
+      alert(err);
     }
   };
 

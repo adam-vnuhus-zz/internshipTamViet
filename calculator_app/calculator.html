@@ -19,91 +19,96 @@
 <body>
     <div class="container" ng-app="myApp" ng-controller="formCtrl" style="margin-top: 50px">
 
-        <div class="border border-dark rounded" style="width: 219px; margin: auto">
-            <input class="textview" ng-model="expressions">
-
-            <table>
+        <div>
+            <table style="margin:auto" class="table-sm" border="2px">
                 <tr>
                     <td colspan="4">
-                        <p style="text-align:right">{{result}}</p>
+                        <input class="input" type="text" ng-model="expressions">
                     </td>
+
                 </tr>
                 <tr>
-                    <td>
-                        <button type="button" class="btn btn-secondary"></button>
+                    <td colspan="4 ">
+                        <div class="result ">{{result}}</div>
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td colspan="2 ">
+                        <button type="button " class="btn btn-secondary " ng-click="clearClicked() ">C</button>
                     </td>
                     <td>
-                        <button type="button" class="btn btn-secondary" ng-click="clearClicked()">C</button>
-                    </td>
-                    <td>
-                        <button type="button" class="btn btn-secondary" ng-click="backspaceClicked()">
-                            <i class="fas fa-backspace"></i>
+                        <button type="button " class="btn btn-secondary " ng-click="backspaceClicked() ">
+                            <i class="fas fa-backspace "></i>
                         </button>
                     </td>
                     <td>
-                        <button type="button" class="btn btn-secondary" ng-click="buttonClicked('/')">/</button>
+                        <button type="button " class="btn btn-secondary " ng-click="buttonClicked( '/') ">/</button>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <button type="button" class="btn btn-dark" ng-click="buttonClicked('7')">7</button>
+                        <button type="button " class="btn btn-dark " ng-click="buttonClicked( '7') ">7</button>
                     </td>
                     <td>
-                        <button type="button" class="btn btn-dark" ng-click="buttonClicked('8')">8</button>
+                        <button type="button " class="btn btn-dark " ng-click="buttonClicked( '8') ">8</button>
                     </td>
                     <td>
-                        <button type="button" class="btn btn-dark" ng-click="buttonClicked('9')">9</button>
+                        <button type="button " class="btn btn-dark " ng-click="buttonClicked( '9') ">9</button>
                     </td>
                     <td>
-                        <button type="button" class="btn btn-secondary" ng-click="buttonClicked('*')">*</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button type="button" class="btn btn-dark" ng-click="buttonClicked('4')">4</button>
-                    </td>
-                    <td>
-                        <button type="button" class="btn btn-dark" ng-click="buttonClicked('5')">5</button>
-                    </td>
-                    <td>
-                        <button type="button" class="btn btn-dark" ng-click="buttonClicked('6')">6</button>
-                    </td>
-                    <td>
-                        <button type="button" class="btn btn-secondary" ng-click="buttonClicked('-')">-</button>
+                        <button type="button " class="btn btn-secondary " ng-click="buttonClicked( '*') ">*</button>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <button type="button" class="btn btn-dark" ng-click="buttonClicked('1')">1</button>
+                        <button type="button " class="btn btn-dark " ng-click="buttonClicked( '4') ">4</button>
                     </td>
                     <td>
-                        <button type="button" class="btn btn-dark" ng-click="buttonClicked('2')">2</button>
+                        <button type="button " class="btn btn-dark " ng-click="buttonClicked( '5') ">5</button>
                     </td>
                     <td>
-                        <button type="button" class="btn btn-dark" ng-click="buttonClicked('3')">3</button>
+                        <button type="button " class="btn btn-dark " ng-click="buttonClicked( '6') ">6</button>
                     </td>
                     <td>
-                        <button type="button" class="btn btn-secondary" ng-click="buttonClicked('+')">+</button>
+                        <button type="button " class="btn btn-secondary " ng-click="buttonClicked( '-') ">-</button>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <button type="button" class="btn btn-secondary" ng-click="navClicked()">nav</button>
+                        <button type="button " class="btn btn-dark " ng-click="buttonClicked( '1') ">1</button>
                     </td>
                     <td>
-                        <button type="button" class="btn btn-dark" ng-click="buttonClicked('0')">0</button>
+                        <button type="button " class="btn btn-dark " ng-click="buttonClicked( '2') ">2</button>
                     </td>
                     <td>
-                        <button type="button" class="btn btn-secondary" ng-click="buttonClicked('.')">.</button>
+                        <button type="button " class="btn btn-dark " ng-click="buttonClicked( '3') ">3</button>
                     </td>
                     <td>
-                        <button type="button" class="btn btn-secondary" ng-click="equalClicked()">=</button>
+                        <button type="button " class="btn btn-secondary " ng-click="buttonClicked( '+') ">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button " class="btn btn-secondary " ng-click="navClicked() ">nav</button>
+                    </td>
+                    <td>
+                        <button type="button " class="btn btn-dark " ng-click="buttonClicked( '0') ">0</button>
+                    </td>
+                    <td>
+                        <button type="button " class="btn btn-secondary " ng-click="buttonClicked( '.') ">.</button>
+                    </td>
+                    <td>
+                        <button type="button " class="btn btn-secondary " ng-click="equalClicked() ">=</button>
                     </td>
                 </tr>
             </table>
 
+
         </div>
-    </div>
 
 </body>
 
