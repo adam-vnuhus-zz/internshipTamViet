@@ -7,7 +7,6 @@ app.controller("formCtrl", function($scope) {
   $scope.buttonClicked = function(button) {
     if ($scope.expressions == "0") {
       $scope.expressions = button;
-      $scope.operationButtonClicked = true;
     } else if (!isNaN(button)) {
       $scope.expressions += button;
       $scope.operationButtonClicked = false;
@@ -31,12 +30,14 @@ app.controller("formCtrl", function($scope) {
   };
 
   $scope.backspaceClicked = function() {
+    $scope.operationButtonClicked = false;
     if ($scope.expressions.length > 1)
       $scope.expressions = $scope.expressions.slice(0, -1);
     else $scope.expressions = "0";
   };
 
   $scope.navClicked = function() {
+    $scope.operationButtonClicked = false;
     let num = parseFloat($scope.expressions);
     function pos_to_neg(num) {
       return -Math.abs(num);
