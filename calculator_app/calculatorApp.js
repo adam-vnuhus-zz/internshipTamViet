@@ -1,34 +1,27 @@
 var app = angular.module("myApp", []);
 app.controller("formCtrl", function($scope) {
   $scope.expressions = "0";
-  // $scope.clicked_6 = function() {
-  //     $scope.number += "6";
-  // }
-  // $scope.clicked_7 = function() {
-  //     $scope.number += "7";
-  // }
 
-  $scope.count = 0;
-  //Đếm số lần click của các kí tự không phải số
+  $scope.operationButtonClicked = false;
+
   $scope.buttonClicked = function(button) {
-    if ($scope.expressions == "0") $scope.expressions = button;
-    else if (!isNaN(button)) {
+    if ($scope.expressions == "0") {
+      $scope.expressions = button;
+      $scope.operationButtonClicked = true;
+    } else if (!isNaN(button)) {
       $scope.expressions += button;
-      $scope.count = 0;
-    } else if (isNaN(button) && $scope.count < 1) {
+      $scope.operationButtonClicked = false;
+    } else if (isNaN(button) && $scope.operationButtonClicked != true) {
       $scope.expressions += button;
-      $scope.count++;
+      $scope.operationButtonClicked = true;
     }
   };
 
   $scope.equalClicked = function() {
-    // $scope.result = eval($scope.expressions);
     try {
       $scope.result = eval($scope.expressions);
-      //   $scope.expressions = $scope.result;
     } catch (err) {
       $scope.expressions = "error";
-      //   console.log(err);
     }
   };
 
