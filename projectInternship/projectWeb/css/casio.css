@@ -1,0 +1,254 @@
+#header {
+	width: 90%;
+	height: 90px;
+	padding-top: 1em;
+    padding-bottom: 1em;
+    margin-left: 150px;
+
+}
+
+#header em {
+	display: inline-block;
+	vertical-align: middle;
+	border-left: 1px solid grey;
+	padding-left: 10px;
+	font-style: normal;
+	color: #0032b0;
+
+}
+
+#header .main-nav {
+	width: 60%;
+	height: 85%;
+	float: right;
+	margin-right: 15px;
+}
+
+.main-nav {
+    overflow: hidden;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-nav a {
+    float: left;
+    font-size: 16px;
+    color: #0032b0;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dr1 {
+    float: left;
+    overflow: hidden;
+}
+
+.dr1 .drbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: #0032b0;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.main-nav a:hover, .dr1:hover .drbtn {
+    background-color: #eaf2ff;
+}
+
+.dr-content {
+    display: none;
+    position: absolute;
+    background-color: #eaf2ff;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dr-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dr-content a:hover {
+    background-color: #eaf2ff;
+    color: #0032b0;
+}
+
+.dr1:hover .dr-content {
+    display: block;
+}
+
+#road {
+	width: 100%;
+	height: 23.8px;
+	background-color: #eaf2ff;
+	
+}
+
+.title {
+	width: 90%;
+	height: 108px;
+	margin: auto;
+}
+
+.title h2 {
+	line-height: 108px;
+	 
+	margin-left: 90px;
+}
+
+.slide {
+	width: 90%;
+	height: 600PX;
+	background-image: url(../img/casio/Satellite.webp);
+	margin: auto;
+}
+
+.spacing {
+	width: 100%;
+	height: 100px;
+	background-color: white;
+}
+
+.products {
+	width: 100%;
+	margin: auto;
+	background-color: #f5f5f5;
+}
+
+.products .title {
+
+}
+
+.products .title h3 {
+	line-height: 108px;
+	margin-left: 90px;
+}
+
+.grid-product {
+	width: 76%;
+	margin: auto;
+}
+
+.grid-product .product-title hr {
+	margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 2px solid rgb(62, 8, 195);
+}
+
+.row {
+	width: 105%;
+	margin-left: -20px;
+	margin-bottom: 30px;
+}	
+
+/*.row .col-sm-6 {
+	background-color: white;
+}
+
+.row .col-sm-6 a {
+	text-decoration: none;
+}
+
+.row .col-sm-6 a .image-product {
+	width: 408px;
+	height: 230px;
+
+}*/
+
+.row .tw-item {
+	width: 46.7%;
+	background-color: white;
+	display: block;
+	text-decoration: none;
+	margin-left: 20px;
+}
+
+.row .tw-item .image-product {
+	width: 100%;
+	
+}
+
+.row .tw-item .description {
+	width: 90%;
+	margin-left: 5px;
+	margin-top: 10px; 
+	color: black;
+}
+
+.row .tw-item .logo {
+	margin-left: 5px;
+	margin-bottom: 10px;
+}
+
+.row .thr-item {
+	width: 30.5%;
+	background-color: white;
+	display: block;
+	text-decoration: none;
+	margin-left: 20px;
+}
+
+.row .thr-item .image-product {
+	width: 100%;
+	
+}
+
+.row .thr-item .description {
+	width: 90%;
+	margin-left: 5px;
+	margin-top: 10px; 
+	color: black;
+}
+
+.row .thr-item .logo {
+	margin-left: 5px;
+	margin-bottom: 10px;
+}
+
+.row a {
+	transition: box-shadow .5s;
+}
+
+
+.row a:hover {
+	box-shadow: 0 0 14px rgb(14, 14, 14);
+}	
+
+.description1 span {
+	margin-top: 0px;
+}
+
+.description1 span mark {
+	font-size: 14px;
+	color: white;
+}
+
+mark, .mark {
+    /*padding: 0.1em;*/
+    background-color: #cc2e3a;
+}
+
+.row .thr-item .description1 {
+	width: 90%;
+	margin-left: 5px;
+	
+	color: black;
+}
+
+#datetime {
+	float: right;
+}
+
+.products {
+	padding-bottom: 20px;
+}

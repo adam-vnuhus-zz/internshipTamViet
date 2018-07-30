@@ -1,0 +1,148 @@
+/*(1366 x 768)*/
+@media screen and (max-width: 1366px){
+    .container{ width: 100%;}
+    #icon .four_col a .img img {width: 36.9%;}
+    #intro .three_col a img {width: 100%;}
+    #content .image img {width: 100%;}
+    
+}
+
+/*(1024 x 768)*/
+@media screen and (max-width: 1024px){
+    .container{ width: 100%;}
+    #logo {font-size: 3.12vw;}
+   #menu ul li a {font-size: 1.372vw;}
+   .title, .title2 {font-size: 1.52vw;}
+   .text {font-size: 1.22vw;}
+   .small_desc { font-size: 1.15vw; }
+   .quote { font-size: 1.664vw; }
+   #copyright p { font-size: 1.22vw; }
+    #icon .four_col a .img img {width: 36.9%;}
+    #intro .three_col a img {width: 100%;}
+    #content .image img {width: 100%;}
+}
+
+@media screen and (max-width: 768px){
+   .container{ width: 100%;}
+   /*.center_content { width: 95%; }*/
+   /*#intro .three_col { width: 51%; }*/
+   .four_col {width: 50%;}
+   #logo {font-size: 3.42vw;}
+   #menu ul li a {font-size: 1.672vw;}
+   .title, .title2 {font-size: 1.82vw;}
+   .text {font-size: 1.52vw;}
+   .small_desc { font-size: 1.45vw; }
+   .quote { font-size: 1.964vw; }
+   #copyright p { font-size: 1.52vw; }
+    #icon .four_col a .img img {width: 36.9%;}
+    #intro .three_col a img {width: 100%;}
+    #content .image img {width: 100%;}
+
+
+    
+}
+/*(480 x 640)*/
+@media screen and (max-width: 640px){
+    .container{ width: 100%;}
+    #logo, #menu { width: 100%; text-align: center;}
+    .four_col {width: 50%;}
+   #logo {font-size: 3.92vw;}
+   #menu ul li a {font-size: 2.172vw;}
+   .title, .title2 {font-size: 2.32vw;}
+   .text {font-size: 2.02vw;}
+   .small_desc { font-size: 1.95vw; }
+   .quote { font-size: 2.464vw; }
+   #copyright p { font-size: 2.02vw; }
+    #icon .four_col a .img img {width: 36.9%;}
+    #intro .three_col a img {width: 100%;}
+    #content .image img {width: 100%;}
+}
+/*(480 x 640)*/
+@media screen and (max-width: 480px){
+    .container{ width: 100%;}
+    /*#logo, #menu { width: 100%; text-align: center;}	*/
+    .four_col {width: 50%;}
+    /*#logo {font-size: 4.02vw;}							*/
+   #logo {font-size: 4.82vw; float: left; width: 27.31% }
+   /*#menu {  }*/
+
+   /*#menu ul li a {font-size: 2.272vw;}*/
+   .title, .title2 {font-size: 2.42vw;}
+   .text {font-size: 2.02vw;}
+   .small_desc { font-size: 2.05vw; }
+   .quote { font-size: 2.564vw; }
+   #copyright p { font-size: 2.12vw; }
+   #icon .four_col a { padding-bottom: 25px; }
+    #icon .four_col a .img img {width: 36.9%;}
+    #intro .three_col a img {width: 100%;}
+    #content .image img {width: 100%; }
+    #content #intro .three_col { width: 75%; margin-bottom: 15px; }
+
+    #menu  { width: 72.69%; display: block;}
+    #menu ul { width: 72.69%; float: right; display: block;}
+    #menu ul li { width: 72.69%; float: right; display: block;}
+    #menu ul li a { display: none; }
+    #menu ul li a.iconn {
+	    float: right;
+	    display: block;
+	  }
+	  /*.myMenu { overflow: hidden; }*/
+	 .responsive ul li  {position: relative;}
+	 .responsive ul li a.iconn {
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	    /*margin-bottom: 15px;*/
+	   
+	}
+
+	#menu.responsive {
+		display: block;
+		
+		width: 60%;
+		
+	}
+
+	#menu.myMenu.responsive ul  {
+	    
+	    display: block;
+	   width: 100%;
+	   background-color: #e3e3e3;
+	    
+	    
+	  }  
+
+	#menu.myMenu.responsive ul li {
+	    
+	    display: block;
+	   width: 100%;
+	  }  
+
+	#menu.myMenu.responsive ul li a {
+		float: none;
+	    display: block;
+	    text-align: right;
+	    z-index: 99;
+	    width: 72.69%; float: right;
+	    font-size: 13px;
+	    /*position: absolute;*/
+	    /*top: 15px;*/
+	    
+	}
+	#menu.myMenu.responsive ul li a#home {
+		margin-top: 30px;
+	}
+
+}
+/*Smart phone nhỏ*/
+@media screen and (max-width: 240px){
+    .container{ width: 100%;}
+    #icon .four_col a .img img {width: 36.9%;}
+    #intro .three_col a img {width: 100%;}
+    #content .image img {width: 100%;}
+}
+
+@media screen and (max-width: 1366px){
+    
+}
+

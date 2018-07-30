@@ -1,0 +1,248 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  /* box-sizing: border-box; */
+}
+
+.container {
+  /* width: 1600px; */
+  width: 100%;
+  background-color: #f7f7f7;
+  margin: auto;
+}
+
+.header {
+  width: 100%;
+  background-color: #e6e6e6;
+  /* height: 123px; */
+  padding: 45px 0px 43px 0px;
+}
+
+.header_content {
+  width: 73.1875%;
+  /* height: 37px; */
+  margin: auto;
+  line-height: 40px;
+}
+
+.marble {
+  font-size: 40px;
+  font-family: "Roboto Condensed";
+  float: left;
+  color: #4e4e4e;
+}
+
+.nav_menu {
+  overflow: hidden;
+  float: right;
+}
+
+.nav_menu a {
+  font-size: 16px;
+  margin-right: 21px;
+  line-height: 40px;
+  text-decoration: none;
+  font-family: "Roboto Condensed";
+  color: #4e4e4e;
+  font-weight: bold;
+}
+
+.nav_menu a:hover {
+  color: #ffffff;
+}
+
+.nav_menu .icon {
+  display: none;
+}
+
+.image {
+  margin: auto;
+}
+
+.content_center {
+  margin: auto;
+  width: 73.1875%;
+  line-height: 40px;
+}
+
+.four_col {
+  width: 25%;
+  text-align: center;
+  float: left;
+  display: block;
+  padding: 0 1% 0 1%;
+}
+
+.title {
+  font-size: 18px;
+  font-family: "Roboto Slab";
+  line-height: 24px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.text {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.title_1 {
+  font-size: 18px;
+  font-family: "Roboto Condensed";
+  line-height: 24px;
+  margin-bottom: 18px;
+  font-weight: bold;
+}
+
+.three_col {
+  width: 32.42%;
+  float: left;
+}
+
+/*.three_col {
+  float: left;
+  width: 33.33%; /* three containers (use 25% for four, and 50% for two, etc) */
+/*padding: 10px;}*/ /* if you want space between the images */
+
+.three_col img {
+  width: 100%;
+}
+
+.small_desc {
+  font-size: 13px;
+  font-family: "Roboto Slab";
+  color: #a8a8a8;
+  line-height: 24px;
+  margin-bottom: 14px;
+}
+
+.space {
+  width: 1.37%;
+  height: 10px;
+  float: left;
+}
+
+hr {
+  border-width: 1.5px;
+}
+
+.quote {
+  background-color: #efefef;
+  padding-bottom: 67px;
+  text-align: center;
+}
+
+.icon_quote {
+  padding-top: 74px;
+  font-size: 100px;
+  font-family: "Spirax";
+  color: #dcdcdc;
+  font-weight: bold;
+}
+
+.content_quote {
+  font-size: 20px;
+  line-height: 32px;
+  color: #a1a1a1;
+}
+
+#footer {
+  padding-bottom: 45px;
+  background-color: #1d1d1d;
+}
+
+#footer .content_footer {
+  padding-bottom: 28px;
+}
+
+#footer .title_1 {
+  color: #6c6c6c;
+  text-align: left;
+}
+
+#footer .four_col {
+  text-align: left;
+  color: #cacaca;
+  line-height: 24px;
+  font-family: "Roboto";
+  font-size: 12px;
+}
+
+#footer .four_col ol {
+  list-style: none;
+  padding: 0;
+}
+
+#footer .four_col ol li {
+  padding-left: 1.3em;
+}
+
+#footer .four_col ol li:before {
+  content: "\f099"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.3em; /* same as padding-left set on li */
+  color: #a89574;
+}
+
+#copyright {
+  margin-top: 52px;
+}
+
+#copyright p {
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 24px;
+  color: #cacaca;
+}
+
+/* #copyright p:before {
+  content: "\f1f9";
+  font-family: FontAwesome;
+} */
+
+@media screen and (max-width: 900px) {
+  .nav_menu a:not(:first-child) {
+    display: none;
+  }
+  .nav_menu a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav_menu.responsive {
+    position: relative;
+    width: 100px;
+  }
+  .nav_menu.responsive .icon {
+    position: absolute;
+    right: 0;
+    margin-right: 0px;
+  }
+  .nav_menu.responsive a {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #footer .four_col {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    font-size: 48%;
+  }
+  .four_col {
+    width: 100%;
+  }
+  .three_col {
+    width: 100%;
+  }
+}

@@ -34,10 +34,25 @@
                     <td colspan="2 ">
                         <button type="button " class="btn btn-secondary " ng-click="clearClicked() ">C</button>
                     </td>
-                    <td>
+                    <td colspan="2 ">
                         <button type="button " class="btn btn-secondary " ng-click="backspaceClicked() ">
                             <i class="fas fa-backspace "></i>
                         </button>
+                    </td>
+                    <!-- <td>
+                        <button type="button " class="btn btn-secondary " ng-click="answerClicked() ">ans</button>
+                        <button type="button " class="btn btn-secondary "></button>
+                    </td> -->
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button " class="btn btn-secondary " ng-click="buttonClicked( '(') ">(</button>
+                    </td>
+                    <td>
+                        <button type="button " class="btn btn-secondary " ng-click="buttonClicked( ')') ">)</button>
+                    </td>
+                    <td>
+                        <button type="button " class="btn btn-secondary " ng-click="navClicked('-') ">(-)</button>
                     </td>
                     <td>
                         <button type="button " class="btn btn-secondary " ng-click="buttonClicked( '/') ">/</button>
@@ -86,12 +101,10 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                        <button type="button " class="btn btn-secondary " ng-click="navClicked() ">nav</button>
-                    </td>
-                    <td>
+                    <td colspan="2">
                         <button type="button " class="btn btn-dark " ng-click="buttonClicked( '0') ">0</button>
                     </td>
+
                     <td>
                         <button type="button " class="btn btn-secondary " ng-click="buttonClicked( '.') ">.</button>
                     </td>

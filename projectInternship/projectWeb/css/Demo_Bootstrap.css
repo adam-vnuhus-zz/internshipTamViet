@@ -1,0 +1,36 @@
+/*#row1 .col-sm-3 {
+	margin-left: 15px;
+}
+
+#row2 .col-sm-3 {
+	margin-left: 15px;
+}*/
+
+.list-inline {
+	display: block;
+}
+
+.list-inline .list-inline-item a {
+	text-decoration: none;
+	display: block;
+}
+
+.list-inline-item a ul li a {
+	display: none;
+
+}
+
+.list-inline-item ul li {
+	list-style-type: none;
+	display: block;
+}
+
+.list-inline .list-inline-item a:hover {
+	background-color: darkviolet;
+	color: white;
+	display: block;
+}
+
+.list-inline-item ul li:hover ul{
+	display: block;
+}

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="../js/grid_control.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/checkout.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <title>Grid</title>
+</head>
+
+<body>
+    <div class="container clearfix">
+        <header id="header">
+            <div class="header clearfix">
+                <div id="header_top">
+                    <div class="header_top center_content clearfix">
+                        <div class="left">
+                            <a href="#home" class="border">
+                                <img src="../images/house.png" alt="house">
+                                <span class="font">Home</span>
+                            </a>
+                            <a href="#myaccount" class="none_border_nearhome " style="padding-left: 11px">
+                                <img src="../images/icon_account.png" alt="account">
+                                <span class="font" style="padding-left: 7px; color: #ffff">My Account</span>
+                            </a>
+                            <a href="#shoppingcart" class="none_border" style=" padding-left: 20px; color: #ffff">
+                                <img src="../images/icon_cart.png " alt="cart ">
+                                <span class="font" style="padding-left: 7px">Shopping Cart</span>
+                            </a>
+                            <a href="#checkout " class="none_border " style="padding-left: 21px; color: #ffff">
+                                <img src="../images/icon_check.png " alt="checkout ">
+                                <span class="font" style="padding-left: 4px">Checkout</span>
+                            </a>
+                        </div>
+                        <div class="right">
+                            <a href="# " class="border border_left">
+                                <img src="../images/england.png " alt="england ">
+                                <span class="font ">English</span>
+                                <img src="../images/icon.png " alt="icon ">
+                            </a>
+                            <a href="# " class="border border_right" style="margin-left: 5px">
+                                <img src="../images/icon$.png " alt="doller " style="width: 16px; height: 16px; ">
+                                <span class="font ">Doller</span>
+                                <img src="../images/icon.png " alt="icon ">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="header_mid" style="padding-bottom: 31px;">
+                    <div class="header_mid center_content clearfix" style="line-height: 50px">
+                        <div class="" style="float: left; padding-top: 30px;">
+                            <img src="../images/logo.png" alt="logo">
+                        </div>
+                        <div style="float: right; padding-top: 10px;">
+                            <div class="">
+                                <div class="right">
+                                    <button class="cart_dd_btn right white" onclick="drop_downFn3();">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <div id="quick_cart" class="cart_dd">
+                                            <p class="title_dd text12 opensans grey">
+                                                Showing 2 of 2 items added
+                                            </p>
+                                            <div class="list_dd clearfix">
+                                                <img src="img/quick-cart.png" class="left">
+                                                <div class="desc_dd left">
+                                                    <p class="text14 black opensans">
+                                                        BEAUTIFUL CROAD
+                                                    </p>
+                                                    <p class="text12 opensans grey left">
+                                                        Size: One size
+                                                        <br>Quantity: 01
+                                                    </p>
+                                                </div>
+
+                                                <div class="price_dd right">
+                                                    <p class="opensans text14 green">
+                                                        $30.00
+                                                        <br>
+                                                        <i class="fas fa-times-circle"></i>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="list_dd clearfix">
+                                                <img src="img/quick-cart.png" class="left">
+                                                <div class="desc_dd left">
+                                                    <p class="text14 black opensans">
+                                                        DRESS $ T-SHIRT
+                                                    </p>
+                                                    <p class="text12 opensans grey left">
+                                                        Size: One size
+                                                        <br>Quantity: 01
+                                                    </p>
+                                                </div>
+
+                                                <div class="price_dd right">
+                                                    <p class="opensans text14 green">
+                                                        $30.00
+                                                        <br>
+                                                        <i class="fas fa-times-circle"></i>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="total_dd clearfix">
+                                                <p class="text14 opensans grey left">Total excluding delivery: </p>
+                                                <p class="text14 opensans green right">$60.00</p>
+                                            </div>
+
+                                            <div class="button_dd clearfix">
+                                                <a href="#" class="opensans text12 white left">View Cart</a>
+                                                <a href="#" class="opensans text12 white right">Continue To Checkout</a>
+                                            </div>
+                                        </div>
+                                    </button>
+
+                                    <button class="cart_dd_btn right white" onclick="drop_downFn4()" ;>
+                                        <i class="fas fa-edit"></i>
+                                        <div id="wish_list" class="cart_dd">
+                                            <p class="title_dd text12 opensans grey">
+                                                Showing 2 of 2 items added
+                                            </p>
+                                            <div class="list_dd clearfix">
+                                                <img src="img/quick-cart.png" class="left">
+                                                <div class="desc_dd left">
+                                                    <p class="text14 black opensans">
+                                                        BEAUTIFUL CROAD
+                                                    </p>
+                                                    <p class="text12 opensans grey left">
+                                                        Size: One size
+                                                        <br>Quantity: 01
+                                                    </p>
+                                                </div>
+
+                                                <div class="price_dd right">
+                                                    <p class="opensans text14 green">
+                                                        $30.00
+                                                        <br>
+                                                        <i class="fas fa-times-circle"></i>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="list_dd clearfix">
+                                                <img src="img/quick-cart.png" class="left">
+                                                <div class="desc_dd left">
+                                                    <p class="text14 black opensans">
+                                                        DRESS $ T-SHIRT
+                                                    </p>
+                                                    <p class="text12 opensans grey left">
+                                                        Size: One size
+                                                        <br>Quantity: 01
+                                                    </p>
+
+                                                </div>
+
+                                                <div class="price_dd right">
+                                                    <p class="opensans text14 green">
+                                                        $30.00
+                                                        <br>
+                                                        <i class="fas fa-times-circle"></i>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="list_dd clearfix">
+                                                <img src="img/quick-cart.png" class="left">
+                                                <div class="desc_dd left">
+                                                    <p class="text14 black opensans">
+                                                        DRESS $ T-SHIRT
+                                                    </p>
+                                                    <p class="text12 opensans grey left">
+                                                        Size: One size
+                                                        <br>Quantity: 01
+                                                    </p>
+
+                                                </div>
+
+                                                <div class="price_dd right">
+                                                    <p class="opensans text14 green">
+                                                        $30.00
+                                                        <br>
+                                                        <i class="fas fa-times-circle"></i>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="total_dd clearfix">
+                                                <p class="text14 opensans grey left">Total excluding delivery: </p>
+                                                <p class="text14 opensans green right">$90.00</p>
+                                            </div>
+
+                                            <div class="button_dd clearfix">
+                                                <a href="#" class="opensans text12 white" style="margin: auto;">Continue To Cart</a>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <span class="font" style="float:right; color: #709b1d">CREATE ACCOUNT</span>
+                                <span class="font" style="float:right; color:#2b2b2b">or</span>
+                                <span class="font" style="float:right; color: #709b1d">LOG IN</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="nav_menu_container">
+            <div class="topnav center_content">
+                <div class="clearfix" style="width: 100%; padding-top: 5px; padding-bottom: 5px">
+                    <a href="#smartPhone">SMART PHONE</a>
+                    <a class="active" href="#dasktop" style="margin-left: 20px;">DASKTOP</a>
+                    <a href="#laptop" style="margin-left: 20px;">LAPTOP</a>
+                    <a href="#accessories" style="margin-left: 20px;">ACCESSORIES</a>
+                    <a href="#networking" style="margin-left: 20px;">NETWORKING</a>
+                    <a href="#software" style="margin-left: 20px;">SOFTWARE</a>
+                    <div class="search-container" style="margin-left: 10px;">
+                        <form action="/action_page.php">
+                            <input type="text_01" placeholder="Search Your Item........" name="search">
+                            <button type="submit" style="width:29px">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main" style="padding-bottom: 69px;">
+            <div class="main_top center_content">
+                Home / Desktop / Checkout Information
+            </div>
+            <div class="row center_content " style="padding-top: 32px">
+                <div class="left_column" style="width: 75%; float: left;">
+                    <div style="font-family: 'Open Sans', 'Semi-Bold'; font-size: 20px;">
+                        <b>Checkout Information</b>
+                    </div>
+                    <hr style="margin-top: 12px; margin-bottom: 25px;">
+                    <div>
+                        <div style="border: 2px solid #eeeeee; padding-bottom: 41px;">
+                            <div style="background-color: #eeeeee; padding: 14px 0px 14px 9px;">
+                                <b>STEP 1:</b> Check Out Information
+                            </div>
+                            <div class="flex-container" style="margin-left: 15px;">
+                                <div style="margin-top: 55px; margin-bottom: 16px">
+                                    <div style="margin-bottom: 31px; font-family: 'Open Sans'; font-size: 20px">
+                                        NEW CUSTOMER
+                                    </div>
+                                    <div style="margin-bottom: 21px; font-family: 'Open Sans'; font-size: 14px">
+                                        Checkout Option
+                                    </div>
+                                    <div style="margin-bottom: 21px;">
+                                        <label class="container" style="font-family: 'Open Sans'; font-size: 14px">
+                                            <input type="radio" name="radio" style="margin-right: 13px;">REGISTER ACCOUNT
+                                        </label>
+                                    </div>
+                                    <div style="margin-bottom: 29px;">
+                                        <label class="container" style="font-family: 'Open Sans'; font-size: 14px">
+                                            <input type="radio" name="radio" style="margin-right: 13px;">GUEST ACCOUNT
+                                    </div>
+                                    <div style="line-height: 20px; margin-bottom: 25px; font-family: 'Open Sans'; font-size: 13px">
+                                        Lorem Ipsum is simply dummy text of the
+                                        <br> printing and typesetting industry.
+                                    </div>
+                                    <div>
+                                        <a href="#" style="background-color: #709b1d;
+                                        color: #ffffff;
+                                        box-shadow: 0 3px #5b8112;
+                                        border: none;
+                                        border-radius: 3px; padding: 12px 30px;font-family: 'Open Sans'; font-size: 20px">
+                                            <b>CONTINUE</b>
+                                        </a>
+
+                                    </div>
+                                </div>
+                                <div style="margin-top: 55px">
+                                    <div style="margin-bottom: 31px;font-family: 'Open Sans'; font-size: 20px">
+                                        RETURNING CUSTOMER
+                                    </div>
+                                    <div style="margin-bottom: 21px;font-family: 'Open Sans'; font-size: 14px">
+                                        I'm a retuning customer
+                                    </div>
+                                    <div style="margin-bottom: 40px;">
+                                        <div style="margin-bottom: 9px;font-family: 'Open Sans'; font-size: 14px ">Email*
+                                            <input type="text" name="email" value="" style="margin-left: 40px">
+                                        </div>
+                                        <div style="font-family: 'Open Sans'; font-size: 14px">Password*
+                                            <input type="password" name="password" value="" style="margin-left: 13px">
+                                        </div>
+                                    </div>
+                                    <div style="margin-bottom: 46px; font-family: 'Open Sans'; font-size: 14px ">
+                                        Forgot your password?
+                                    </div>
+                                    <div>
+                                        <a href="#" style="background-color: #eeeeee;
+                                        color: #444444;
+                                        box-shadow: 0 3px #d3d3d3;
+                                        border: none;
+                                        border-radius: 3px; padding: 12px 43px;padding: 12px 30px;font-family: 'Open Sans'; font-size: 20px">
+                                            <b>LOG IN</b>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="background-color: #eeeeee; padding: 14px 0px 14px 9px; margin-top: 15px;margin-bottom: 16px">
+                            <b>STEP 2:</b> Billing Information
+                        </div>
+                        <div style="background-color: #eeeeee; padding: 14px 0px 14px 9px; margin-bottom: 16px">
+                            <b>STEP 3:</b> Delivery Information
+                        </div>
+                        <div style="background-color: #eeeeee; padding: 14px 0px 14px 9px;margin-bottom: 16px">
+                            <b>STEP 4:</b> Payment Methods
+                        </div>
+                        <div style="background-color: #eeeeee; padding: 14px 0px 14px 9px;">
+                            <b>STEP 5:</b> Confirm Order
+                        </div>
+                    </div>
+                </div>
+                <div class="right_column" style="width: 25%; float: left; padding-left: 21px">
+                    <div class="card three_col" style="width: 100%;">
+                        <div id="category">
+                            <div class="topic opensans text18 white" style="background-color: #7fa522;">
+                                <p>CATEGORY</p>
+                            </div>
+
+                            <ul>
+                                <a>
+                                    <li>SMART PHONE</li>
+                                </a>
+                                <a>
+                                    <li>DESKTOP</li>
+                                </a>
+                                <a>
+                                    <li>LAPTOP</li>
+                                </a>
+                                <a>
+                                    <li>ACCESSORIES</li>
+                                </a>
+                                <a>
+                                    <li>NETWORKING</li>
+                                </a>
+                                <a>
+                                    <li>SOFTWARE</li>
+                                </a>
+                            </ul>
+                        </div>
+
+                        <div id="brand">
+                            <div class="topic opensans text18 white" style="background-color: #7fa522;">
+                                <p>BY BRAND</p>
+                            </div>
+
+                            <ul>
+                                <a>
+                                    <li>HP</li>
+                                </a>
+                                <a>
+                                    <li>DELL</li>
+                                </a>
+                                <a>
+                                    <li>APPLE</li>
+                                </a>
+                                <a>
+                                    <li>ASUS</li>
+                                </a>
+                                <a>
+                                    <li>SAMSUNG</li>
+                                </a>
+                                <a>
+                                    <li>TOSHIBA</li>
+                                </a>
+                            </ul>
+                        </div>
+
+                        <div id="price">
+                            <div class="topic opensans text18 white" style="background-color: #7fa522;">
+                                <p>BY PRICE</p>
+                            </div>
+
+                            <ul>
+                                <a>
+                                    <li>APPLE</li>
+                                </a>
+                                <a>
+                                    <li>$1000-$2000</li>
+                                </a>
+                                <a>
+                                    <li>$2000-$3000</li>
+                                </a>
+                                <a>
+                                    <li>$3000-$4000</li>
+                                </a>
+                                <a>
+                                    <li>$4000-$5000</li>
+                                </a>
+                                <a>
+                                    <li>$5000-$6000</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer" style="width: 100%">
+            <div class="footer_top01 clearfix">
+                <div class="center_content">
+                    <div class="footer_four_col">
+                        <a href="#" class="button_footer_top01 clearfix">
+                            <img src="../images/buttom_firstshipping.png" alt="buttom_firstshipping">
+                        </a>
+                    </div>
+                    <div class="footer_four_col" style="margin-left: 20.6px">
+                        <a href="#" class="button_footer_top01 clearfix">
+                            <img src="../images/buttom_secure.png" alt="buttom_secure" style="margin-left: 7px;">
+                        </a>
+                    </div>
+                    <div class="footer_four_col" style="margin-left: 20.5px">
+                        <a href="#" class="button_footer_top01 clearfix">
+                            <img src="../images/buttom_save_time.png" alt="buttom_save_time" style="margin-left: 7px;">
+                        </a>
+                    </div>
+                    <div class="footer_four_col" style="margin-left: 20.9px">
+                        <a href="#" class="button_footer_top01 clearfix">
+                            <img src="../images/buttom_pay_on.png" alt="buttom_pay_on" style="margin-left: 5px;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_top02">
+                <div class="center_content">
+                    <div style="margin-top: 89px; margin-bottom: 26px">
+                        <a href="#" class="clearfix">
+                            <img src="../images/button_our_brand.png" alt="#" style="margin-left: 42%;">
+                        </a>
+                    </div>
+                    <div style="margin-bottom: 50px;">
+                        <img src=" ../images/icon_footer_top02.png " alt=" ">
+                        <img src="../images/icon02_footer_top02.png " alt=" " style="margin-left: 22px">
+                        <img src="../images/icon03_footer_top02.png " alt=" " style="margin-left: 22px">
+                        <img src="../images/icon_footer_top02.png " alt=" " style="margin-left: 22px">
+                        <img src="../images/icon04_footer_top02.png " alt=" " style="margin-left: 22px">
+                        <img src="../images/icon05_footer_top02.png " alt=" " style="margin-left: 22px">
+                    </div>
+                </div>
+            </div>
+            <div class="footer_top " style="background-color: #f1f1f1 ">
+                <div class="center_content clearfix ">
+                    <div class="footer_four_col " style="margin-right: 20px; ">
+                        <p>INFORMATION</p>
+                        <hr>
+                        <ul>
+                            <li>ABOUT US</li>
+                            <li>CUSTOMAR SERVICE</li>
+                            <li>PRIVACY POLICY</li>
+                            <li>SITE MAP</li>
+                            <li>CONTACT</li>
+                        </ul>
+                    </div>
+                    <div class="footer_four_col " style="margin-right: 20px; ">
+                        <p>WHY BUY FROM US</p>
+                        <hr>
+                        <ul>
+                            <li>ABOUT US</li>
+                            <li>SHIPPING & RETURNS</li>
+                            <li>INTERNATIONAL SHIPPINH</li>
+                            <li>AFFILIATES</li>
+                            <li>GROUP SALES</li>
+                        </ul>
+                    </div>
+                    <div class="footer_four_col " style="margin-right: 20px; ">
+                        <p>MY ACCOUNT</p>
+                        <hr>
+                        <ul>
+                            <li>SIGN IN</li>
+                            <li>VIEW CART</li>
+                            <li>MY WISHLIST</li>
+                            <li>TRACK MY ORDER</li>
+                            <li>HELP</li>
+                        </ul>
+                    </div>
+                    <div class="footer_four_col ">
+                        <p>CONTACT</p>
+                        <hr>
+                        <ul>
+                            <li>EAST BOX NAGAR, SARULIA DEMRA, DHAKA-1361</li>
+                            <li>+880 1768760504
+                                <br> +880 1735982113</li>
+                            <li>binburhan1@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_mid " style="background-color: #e0e0e0 ">
+                <div class="center_content clearfix ">
+                    <div class="footer_mid_left clearfix ">
+                        <a href="#we_accept " class="footer_button " style="margin-right: 15px; ">
+                            <div style="padding: 9px 15px 8px 13px; ">WE ACCEPT</div>
+                        </a>
+                        <a href="# " class="footer_icon " style="margin-right: 10px; ">
+                            <div>
+                                <img src="../images/visa_electron.png " alt="# ">
+                            </div>
+                        </a>
+                        <a href="# " class="footer_icon " style="margin-right: 10px; ">
+                            <div>
+                                <img src="../images/master.png " alt="# ">
+                            </div>
+                        </a>
+                        <a href="# " class="footer_icon " style="margin-right: 10px; ">
+                            <div>
+                                <img src="../images/american_express.png " alt="# ">
+                            </div>
+                        </a>
+                        <a href="# " class="footer_icon " style="margin-right: 115px; ">
+                            <div>
+                                <img src="../images/cirrus.png " alt="# ">
+                            </div>
+                        </a>
+                        <a href="#we_accept " class="footer_button " style="margin-right: 19px; ">
+                            <div style="padding: 9px 20px 8px 19px; ">FOLLOW US</div>
+                        </a>
+                        <a href="# " class="footer_icon " style="margin-right: 10px; ">
+                            <div>
+                                <img src="../images/facebook.png " alt="# ">
+                            </div>
+                        </a>
+                        <a href="# " class="footer_icon " style="margin-right: 10px; ">
+                            <div>
+                                <img src="../images/twitter.png " alt="# ">
+                            </div>
+                        </a>
+                        <a href="# " class="footer_icon " style="margin-right: 10px; ">
+                            <div>
+                                <img src="../images/google.png " alt="# ">
+                            </div>
+                        </a>
+                        <a href="# " class="footer_icon " style="margin-right: 10px; ">
+                            <div>
+                                <img src="../images/icon_footer.png " alt="# ">
+                            </div>
+                        </a>
+                        <a href="# " class="footer_icon ">
+                            <div>
+                                <img src="../images/icon_footer02.png " alt="# ">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom " style="background-color: #709b1d ">
+                <p>Copyright by : company name</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

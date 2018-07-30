@@ -1,0 +1,45 @@
+/*(1366 x 768)*/
+@media screen and (max-width: 1366px){
+    .container{ width: 100%; font-size: 85.3%;}
+    #icon .four_col a .img img {width: 36.9%;}
+    #intro .three_col a img {width: 100%;}
+    #content .image img {width: 100%;}
+}
+
+/*(1024 x 768)*/
+@media screen and (max-width: 1024px){
+    .container{ width: 100%; font-size: 64%;}
+    #icon .four_col a .img img {width: 36.9%;}
+    #intro .three_col a img {width: 100%;}
+    #content .image img {width: 100%;}
+}
+
+@media screen and (max-width: 768px){
+   .container{ width: 100%; font-size: 48%;}
+    #icon .four_col a .img img {width: 36.9%;}
+    #intro .three_col a img {width: 100%;}
+    #content .image img {width: 100%;}
+}
+/*(480 x 640)*/
+@media screen and (max-width: 480px){
+    .container{ width: 100%; font-size: 30%;}
+    #icon .four_col a .img img {width: 36.9%;}
+    #intro .three_col a img {width: 100%;}
+    #content .image img {width: 100%;}
+}
+/*(480 x 640)*/
+@media screen and (max-width: 320px){
+    .container{ width: 100%; font-size: 20%;}
+    #icon .four_col a .img img {width: 36.9%;}
+    #intro .three_col a img {width: 100%;}
+    #content .image img {width: 100%;}
+}
+/*Smart phone nhỏ*/
+@media screen and (max-width: 240px){
+    
+}
+
+@media screen and (max-width: 1366px){
+    
+}
+
